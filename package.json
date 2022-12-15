@@ -1,6 +1,6 @@
 {
-  "name": "statusresponse",
-  "version": "1.0.1",
+  "name": "status-responses",
+  "version": "1.0.2",
   "description": "Basic JSON utility",
   "main": "index.js",
   "scripts": {
