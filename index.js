@@ -1,12 +1,12 @@
 module.exports = {
-  success: (response = 'Success!', json = {}) => ({
+  success: (response, json = {}) => ({
     status: true,
-    response,
+    response: response != null ? response : 'Success!',
     ...json
   }),
-  err: (response = 'Error!', json = {}) => ({
+  err: (response, json = {}) => ({
     status: false,
-    response,
+    response: response != null ? response : 'Error!',
     ...json
   })
 }
