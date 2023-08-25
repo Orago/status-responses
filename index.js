@@ -1,15 +1,15 @@
 exports.success = function (response, overrideData = {}) {
 	return {
-		status: true,
-		response: response !== null ? response : 'Success!',
-		...overrideData
+		...overrideData,
+		response: response ?? 'Success!',
+		status: true
 	};
 };
 
 exports.err = function(response, overrideData = {}) {
 	return {
-		status: false,
-		response: response !== null ? response : 'Error!',
-		...overrideData
+		...overrideData,
+		response: response ?? 'Error!',
+		status: false
 	};
 };
