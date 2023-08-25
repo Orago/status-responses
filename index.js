@@ -1,12 +1,15 @@
-module.exports = {
-  success: (response, json = {}) => ({
-    status: true,
-    response: response != null ? response : 'Success!',
-    ...json
-  }),
-  err: (response, json = {}) => ({
-    status: false,
-    response: response != null ? response : 'Error!',
-    ...json
-  })
-}
+exports.success = function (response, overrideData = {}) {
+	return {
+		status: true,
+		response: response !== null ? response : 'Success!',
+		...overrideData
+	};
+};
+
+exports.err = function(response, overrideData = {}) {
+	return {
+		status: false,
+		response: response !== null ? response : 'Error!',
+		...overrideData
+	};
+};
