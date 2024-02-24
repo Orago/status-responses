@@ -1,13 +1,13 @@
 {
   "name": "@orago/status",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Basic JSON utility",
-  "main": "index.js",
+  "main": "js/index.js",
   "scripts": {
-		"start": "node index.js",
+		"install": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-	"repository": {
+  "repository": {
     "type": "git",
     "url": "https://github.com/orago/status-responses.git"
   },
@@ -15,5 +15,8 @@
     "json"
   ],
   "author": "Orago",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^5.3.3"
+  }
 }
